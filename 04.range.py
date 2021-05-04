@@ -46,6 +46,41 @@ while val in list_test:
 print(list_test)
 
 #시간
-import time as three
+import time
 
-t.time()
+output = 0
+target = time.time()+5
+'''
+while time.time() < target:
+    output += 1
+    print(output)
+'''
+
+print("5초동안 반복한 횟수:",output)
+#fps : Frame Per Second
+
+#continue
+numbers = [5,15,6,20,7]
+
+for n in numbers:
+    if n < 10:
+        continue
+    print(n)
+
+#lambda  for나 조건부분 부터 잘라서 보자
+array = [i for i in range(0,20,2)]
+print(array)
+
+array = ['사과','배','바나나','귤','자두']
+output = [len(fruit) for fruit in array if fruit != '바나나']
+print(output)
+
+list_a = [75,98,100,95,88]
+minVal = min(list_a)
+maxVal = max(list_a)
+print(minVal)
+print(maxVal)
+
+
+
+
