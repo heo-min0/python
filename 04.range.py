@@ -29,3 +29,23 @@ for i in range(len(array)):
 for i in reversed(range(10)):
     print(i)
 
+#while
+w=0
+while w<10:
+    print('{}번째 루프'.format(w))
+    w+=1
+
+#while true
+
+list_test = [1,2,1,2]
+val=2
+
+while val in list_test:
+    list_test.remove(val)
+
+print(list_test)
+
+#시간
+import time as three
+
+t.time()
